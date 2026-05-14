@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS attractions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  description TEXT,
+  latitude REAL,
+  longitude REAL,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+); 

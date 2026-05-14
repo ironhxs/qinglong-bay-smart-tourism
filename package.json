@@ -1,0 +1,30 @@
+{
+  "name": "qinglongwan-smart-tourism",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cross-env PORT=5000 npm run --workspace backend dev\" \"npm run --workspace frontend dev\"",
+    "build": "npm run --workspace backend build && npm run --workspace frontend build",
+    "check": "npm run build",
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore",
+    "format": "prettier --write .",
+    "test": "npm run check",
+    "migrate": "npm run --workspace backend migrate",
+    "seed": "npm run --workspace backend seed"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@typescript-eslint/eslint-plugin": "^8.59.3",
+    "@typescript-eslint/parser": "^8.59.3",
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.45.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.5.2",
+    "prettier": "^2.8.8"
+  }
+}
