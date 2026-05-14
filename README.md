@@ -156,7 +156,7 @@ XFYUN_VCN=x4_lingxiaoying_assist
 
 ## 开发状态
 
-- 已整理为独立项目目录，项目名统一为 `qinglongwan-smart-tourism`。
+- 已整理为独立项目目录，项目名统一为 `qinglong-bay-smart-tourism`。
 - 已清理本地临时文件、构建产物、日志、`.env`、大文档和重复旧目录。
 - 已补充 README 截图、`.gitignore`、`.env.example` 和可执行构建脚本。
 - 已将外部平台密钥改为环境变量读取；未配置讯飞密钥时，虚拟人模块进入本地演示模式。
