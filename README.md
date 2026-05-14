@@ -154,14 +154,6 @@ XFYUN_VCN=x4_lingxiaoying_assist
 | `npm run seed` | 写入示例景点数据 |
 | `npm run --workspace frontend preview` | 预览前端生产构建 |
 
-## 开发状态
-
-- 已整理为独立项目目录，项目名统一为 `qinglong-bay-smart-tourism`。
-- 已清理本地临时文件、构建产物、日志、`.env`、大文档和重复旧目录。
-- 已补充 README 截图、`.gitignore`、`.env.example` 和可执行构建脚本。
-- 已将外部平台密钥改为环境变量读取；未配置讯飞密钥时，虚拟人模块进入本地演示模式。
-- 已通过 `npm run build` 和 `npm audit` 校验。
-
 ## License
 
 本项目用于教学、比赛和演示场景。商业使用前请确认第三方 API、素材、模型服务和图片资源授权。
